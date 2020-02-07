@@ -1,4 +1,6 @@
-﻿using Microsoft.SharePoint.Client;
+﻿#if USE_SHAREPOINT
+
+using Microsoft.SharePoint.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,3 +62,4 @@ namespace AppointmentNotificationManager
         }
     }
 }
+#endif
